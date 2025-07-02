@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Figureweb - Your all-in-one web solution for domains, hosting, and website building">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    
+    <!-- Preload critical assets -->
+     <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/webhosting.css" as="style">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/webhosting.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="h4 mb-0">Figureweb</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="domain.html" data-bs-toggle="dropdown">Domains</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="domain.html">Domain Search</a></li>
+                            <li><a class="dropdown-item" href="domain.html#domain-transfer">Domain Transfer</a></li>
+                            <li><a class="dropdown-item" href="domain.html#bulk-registration">Bulk Registration</a></li>
+                        </ul>
+                    </li>
+                 
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Web Hosting</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="hosting-options">
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-user hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Linux Shared Hosting</h4>
+                                                    <p>Powerful shared hosting</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html#windows-shared" class="hosting-item">
+                                                <i class="fab fa-windows hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Window Shared Hosting</h4>
+                                                    <p>The Perfect Windows Hosting Solution</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-chart-pie hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Reseller Hosting</h4>
+                                                    <p>Build your own hosting company</p>
+                                                </div>
+                                            </a>
+                                            <a href="/vps-hosting" class="hosting-item">
+                                                <i class="fas fa-server hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>VPS Hosting</h4>
+                                                    <p>Full root access allows total control</p>
+                                                </div>
+                                            </a>
+                                              
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-cloud hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Cloud Hosting</h4>
+                                                    <p>Best Cloud Hosting</p>
+                                                </div>
+                                            </a>
+
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-database hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Dedicated Server</h4>
+                                                    <p>Powerful Dedicated Servers</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="promo-section">
+                                            <h3>Secure your Website with SSL</h3>
+                                            <div class="promo-price">₦3,500<span>/year</span></div>
+                                            <div class="original-price">₦9,000/year</div>
+                                            <div class="discount-badge">60% OFF</div>
+                                            <a href="/purchase" class="purchase-btn">PURCHASE NOW!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="emailhosting.html" data-bs-toggle="dropdown">Email Hosting</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="emailhosting.html">Business Email</a></li>
+                            <li><a class="dropdown-item" href="emailhosting.html#enterprise-email">Enterprise Email</a></li>
+                            <li><a class="dropdown-item" href="emailhosting.html#google-workspace">Google Workspace</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ssl.html">SSL & Security</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html" >Support</a>
+                            </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="/security">Security</a></li> -->
+                    <li class="nav-item btn-group">
+                        <a class="btn btn-outline-primary me-2" href="/login">Login</a>
+                        <a class="btn btn-primary" href="/signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Hero Section -->
+    <section class="modern-hero text-white py-5 mt-5">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-4">
+                            <span class="badge-text">🚀 Premium Web Hosting</span>
+                        </div>
+                        <h1 class="hero-title mb-4">
+                            <span class="title-highlight">Amazing</span> Web Hosting<br>
+                            <span class="title-gradient">Services</span>
+                        </h1>
+                        <p class="hero-description mb-5">
+                            Experience lightning-fast, secure, and reliable hosting powered by cutting-edge technology. 
+                            Perfect for websites, blogs, and growing businesses.
+                        </p>
+                        <div class="hero-buttons d-flex flex-wrap gap-3">
+                            <a href="#plans" class="btn btn-primary btn-lg hero-btn-primary">
+                                <i class="fas fa-rocket me-2"></i>View Plans
+                            </a>
+                            <a href="/contact" class="btn btn-outline-light btn-lg hero-btn-secondary">
+                                <i class="fas fa-phone me-2"></i>Contact Sales
+                            </a>
+                        </div>
+                        <div class="hero-stats mt-5">
+                            <div class="row g-4">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">99.9%</div>
+                                        <div class="stat-label">Uptime</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">24/7</div>
+                                        <div class="stat-label">Support</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">10K+</div>
+                                        <div class="stat-label">Clients</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="server-illustration">
+                            <div class="server-rack">
+                                <div class="server-unit active">
+                                    <div class="server-lights">
+                                        <span class="light green"></span>
+                                        <span class="light green"></span>
+                                        <span class="light blue"></span>
+                                    </div>
+                                </div>
+                                <div class="server-unit">
+                                    <div class="server-lights">
+                                        <span class="light green"></span>
+                                        <span class="light orange"></span>
+                                        <span class="light blue"></span>
+                                    </div>
+                                </div>
+                                <div class="server-unit">
+                                    <div class="server-lights">
+                                        <span class="light green"></span>
+                                        <span class="light green"></span>
+                                        <span class="light blue"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="connection-lines">
+                                <div class="line line-1"></div>
+                                <div class="line line-2"></div>
+                                <div class="line line-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 features-section">
+        <div class="container">
+            <h2 class="text-center mb-5  change">We Offer</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
+                        <h3>Lightning Fast</h3>
+                        <p>Optimized servers with SSD storage for maximum performance</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                        <h3>Enhanced Security</h3>
+                        <p>Advanced security features with free SSL certificates</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Expert support team available around the clock</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linux Pricing Section -->
+    <section id="plans" class="windows-pricing py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Linux Shared Hosting Plan</h2>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow-sm p-4 text-white" style="background-color: #d9534f;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Basic</h5>
+                            <p>For personal use</p>
+                            <div class="price my-4">
+                                <span class="fs-1 fw-bold">₦3,500</span>
+                                <span class="text-white-50">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>10GB SSD Storage</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Free SSL Certificate</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>1 Website</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>5 Email Accounts</li>
+                            </ul>
+                            <a href="/order" class="btn mt-auto fw-bold" style="background-color: #a94442; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow p-4 text-dark" style="background-color: #40e0d0;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Professional</h5>
+                            <p>For small businesses</p>
+                            <div class="price my-4">
+                                <span class="fs-1 fw-bold">₦7,000</span>
+                                <span class="text-dark-50">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>25GB SSD Storage</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Free SSL Certificate</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>5 Websites</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>20 Email Accounts</li>
+                            </ul>
+                            <a href="/order" class="btn mt-auto fw-bold" style="background-color: #008080; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Business Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow-sm p-4 text-white" style="background-color: #d9534f;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Business</h5>
+                            <p>For large enterprises</p>
+                            <div class="price my-4">
+                                <span class="fs-1 fw-bold">₦12,000</span>
+                                <span class="text-white-50">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>50GB SSD Storage</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Free SSL Certificate</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Websites</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Email Accounts</li>
+                            </ul>
+                            <a href="/order" class="btn mt-auto fw-bold" style="background-color: #a94442; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Windows Shared Hosting Section -->
+    <section id="windows-shared" class="windows-pricing py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Windows Shared Hosting</h2>
+                <p class="lead text-muted mb-4">Powerful Windows hosting solutions with full ASP.NET support, MSSQL databases, and seamless Microsoft technology integration</p>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-8">
+                        <p class="text-muted">Our Windows shared hosting platform is specifically designed for developers and businesses who rely on Microsoft technologies. Built on the latest Windows Server infrastructure with IIS web server, our hosting environment provides optimal performance for ASP.NET applications, .NET Core frameworks, and Microsoft SQL Server databases. Whether you're running a simple website or a complex web application, our Windows hosting delivers the reliability and compatibility you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Standard Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow-3 shadow-sm p-4 text-white" style="background-color: #6f42c1;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Standard</h5>
+                            <p class="mb-3">Perfect for personal websites and small ASP.NET projects</p>
+                            <div class="price my-4">
+                                <span class="fs-1 fw-bold">₦4,500</span>
+                                <span class="text-white-50">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>15GB SSD Storage</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>1 Website</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>ASP.NET 4.8 & Core Support</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>1 MSSQL Database (500MB)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>IIS Web Server</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>5 Email Accounts</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Free SSL Certificate</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>24/7 Expert Support</li>
+                            </ul>
+                            <a href="/order" class="btn mt-auto fw-bold" style="background-color: #5a2d91; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow p-4 text-white" style="background-color: #20c997;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Professional</h5>
+                            <p class="mb-3">Ideal for growing businesses with multiple .NET applications</p>
+                            <div class="price my-4">
+                                <span class="fs-1 fw-bold">₦8,500</span>
+                                <span class="text-white-50">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>40GB SSD Storage</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>5 Websites</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Full .NET Framework Support</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>3 MSSQL Databases (2GB each)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Windows Server 2022</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>25 Email Accounts</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Free SSL Certificates</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Remote Desktop Access</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Priority Support</li>
+                            </ul>
+                            <a href="/order" class="btn mt-auto fw-bold" style="background-color: #1aa179; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow-sm p-4 text-white" style="background-color: #fd7e14;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Business</h5>
+                            <p class="mb-3">Enterprise-grade Windows hosting for mission-critical applications</p>
+                            <div class="price my-4">
+                                <span class="fs-1 fw-bold">₦15,000</span>
+                                <span class="text-white-50">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>100GB SSD Storage</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Websites</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Latest .NET 8 & ASP.NET Core</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited MSSQL Databases (5GB each)</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Dedicated Application Pool</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited Email Accounts</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Free Domain Name</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Advanced Security Features</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>White-Glove Migration</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Dedicated Support Manager</li>
+                            </ul>
+                            <a href="/order" class="btn mt-auto fw-bold" style="background-color: #e55a0e; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VPN Hosting Section -->
+    <section id="vpn-hosting" class="windows-pricing py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">VPN Hosting Solutions</h2>
+                <p class="lead">Secure, private, and reliable VPN infrastructure for your business</p>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Enhanced Security -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow-sm p-4 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Enhanced Security</h5>
+                            <p>Military-grade encryption keeps your data safe from prying eyes and cyber threats.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>256-bit encryption</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>No-logs policy</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>DDoS protection</li>
+                            </ul>
+                            <a href="/vpn-hosting" class="btn mt-auto fw-bold" style="background-color: #4c63d2; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- High Performance -->
+                    <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow p-4 text-white" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">High Performance</h5>
+                            <p>Lightning-fast servers with unlimited bandwidth for seamless browsing and streaming.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>10 Gbps network</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Unlimited bandwidth</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>99.9% uptime guarantee</li>
+                            </ul>
+                            <a href="/vpn-hosting" class="btn mt-auto fw-bold" style="background-color: #e91e63; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Global Network -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 rounded-3 shadow-sm p-4 text-white" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Global Network</h5>
+                            <p>Access content from anywhere with our worldwide server network in 50+ countries.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>500+ servers</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>50+ countries</li>
+                                <li class="mb-2"><i class="fas fa-check-circle me-2"></i>Smart location selection</li>
+                            </ul>
+                            <a href="/vpn-hosting" class="btn mt-auto fw-bold" style="background-color: #0288d1; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="/vpn-hosting" class="btn vpn-explore-btn btn-lg position-relative overflow-hidden">
+                    <span class="btn-content">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        Explore VPN Solutions
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </span>
+                    <div class="btn-shine"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Enhanced Footer -->
+        <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Figureweb</h5>
+                    <p>Professional email hosting solutions for businesses of all sizes.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="webhosting.html#business-email" class="text-light">Business Email</a></li>
+                        <li><a href="webhosting.html#enterprise-email" class="text-light">Enterprise Email</a></li>
+                        <li><a href="webhosting.html#google-workspace" class="text-light">Google Workspace</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-light">Help Center</a></li>
+                        <li><a href="contact.html" class="text-light">Contact Us</a></li>
+
+                        <li><a href="/status" class="text-light">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="aboutUs.html" class="text-light">About Us</a></li>
+                        <li><a href="/careers" class="text-light">Careers</a></li>
+                        <li><a href="/blog" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy" class="text-light">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-light">Terms of Service</a></li>
+                        <li><a href="/sla" class="text-light">SLA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Figureweb. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CtXxk4UVS/" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/figurewebng?s=21" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/figuraid-ltdh/" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/figurewebng?igsh=MWFxdzY3NzJrNHJmOQ==" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Scripts -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+     <!-- Bootstrap JS Bundle with Popper -->
+      <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="js/webhosting.js"></script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SSL Certificates & Security Solutions - Secure your website with trusted SSL certificates and comprehensive security services">
+    <title>SSL & Security - Figureweb</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/ssl.css" as="style">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/ssl.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="h4 mb-0">Figureweb</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="domain.html" data-bs-toggle="dropdown">Domains</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="domain.html">Domain Search</a></li>
+                            <li><a class="dropdown-item" href="domain.html#domain-transfer">Domain Transfer</a></li>
+                            <li><a class="dropdown-item" href="domain.html#bulk-registration">Bulk Registration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Web Hosting</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="hosting-options">
+                                            <a href="webhosting.html#" class="hosting-item">
+                                                <i class="fas fa-user hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Linux Shared Hosting</h4>
+                                                    <p>Powerful shared hosting</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html#windows-shared" class="hosting-item">
+                                                <i class="fab fa-windows hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Window Shared Hosting</h4>
+                                                    <p>The Perfect Windows Hosting Solution</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-chart-pie hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Reseller Hosting</h4>
+                                                    <p>Build your own hosting company</p>
+                                                </div>
+                                            </a>
+                                            <a href="/vps-hosting" class="hosting-item">
+                                                <i class="fas fa-server hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>VPS Hosting</h4>
+                                                    <p>Full root access allows total control</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-cloud hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Cloud Hosting</h4>
+                                                    <p>Best Cloud Hosting</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-database hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Dedicated Server</h4>
+                                                    <p>Powerful Dedicated Servers</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="promo-section">
+                                            <h3>Secure your Website with SSL</h3>
+                                            <div class="promo-price">₦3,500<span>/year</span></div>
+                                            <div class="original-price">₦9,000/year</div>
+                                            <div class="discount-badge">60% OFF</div>
+                                            <a href="/purchase" class="purchase-btn">PURCHASE NOW!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="emailhosting.html" data-bs-toggle="dropdown">Email Hosting</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="emailhosting.html">Business Email</a></li>
+                            <li><a class="dropdown-item" href="emailhosting.html#enterprise-email">Enterprise Email</a></li>
+                            <li><a class="dropdown-item" href="emailhosting.html#google-workspace">Google Workspace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ssl.html">SSL & Security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Support</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="btn btn-outline-primary me-2" href="/login">Login</a>
+                        <a class="btn btn-primary" href="/signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+        <section class="ssl-hero-section position-relative" aria-label="SSL Hero section">
+            <div class="ssl-hero-background"></div>
+            <div class="ssl-hero-particles"></div>
+            <div class="ssl-hero-gradient"></div>
+            
+            <div class="container d-flex align-items-center position-relative">
+                <div class="row align-items-center w-100">
+                    <div class="col-lg-6">
+                        <div class="ssl-hero-content">
+                            <div class="ssl-hero-badge mb-3">
+                                <span class="badge-text">Trusted Security</span>
+                            </div>
+                            <h1 class="display-3 fw-bold mb-4">
+                                Secure Your Website with 
+                                <span class="gradient-text">SSL Certificates</span>
+                            </h1>
+                            <p class="lead mb-4">
+                                Protect your website and build customer trust with industry-leading SSL certificates. 
+                                Get instant validation, 256-bit encryption, and 99.9% browser compatibility.
+                            </p>
+                            <div class="ssl-hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">256-bit</div>
+                                    <div class="stat-label">Encryption</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">99.9%</div>
+                                    <div class="stat-label">Browser Trust</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Support</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ssl-hero-illustration">
+                            <div class="ssl-shield-container">
+                                <div class="ssl-shield">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="ssl-lock">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="ssl-certificate">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="floating-elements">
+                                <div class="floating-element element-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="floating-element element-2">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="floating-element element-3">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SSL Certificates Section -->
+        <section id="ssl-plans" class="ssl-section py-5" aria-label="SSL Certificate Plans">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Choose Your SSL Certificate</h2>
+                    <p class="lead text-muted">From basic domain validation to extended validation certificates, we have the right SSL solution for your needs.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Domain Validated SSL -->
+                    <div class="col-lg-4">
+                        <div class="ssl-plan-card h-100">
+                            <div class="ssl-plan-header">
+                                <div class="ssl-plan-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 class="ssl-plan-title">Domain Validated</h3>
+                                <p class="ssl-plan-subtitle">Basic SSL Protection</p>
+                            </div>
+                            <div class="ssl-plan-price">
+                                <span class="price-currency">₦</span>
+                                <span class="price-amount">3,500</span>
+                                <span class="price-period">/year</span>
+                            </div>
+                            <div class="ssl-plan-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Domain validation</li>
+                                    <li><i class="fas fa-check"></i> 256-bit encryption</li>
+                                    <li><i class="fas fa-check"></i> 99.9% browser compatibility</li>
+                                    <li><i class="fas fa-check"></i> Issued in minutes</li>
+                                    <li><i class="fas fa-check"></i> $10,000 warranty</li>
+                                    <li><i class="fas fa-check"></i> Site seal included</li>
+                                </ul>
+                            </div>
+                            <div class="ssl-plan-action">
+                                <a href="/purchase-ssl?type=dv" class="btn btn-outline-primary btn-lg w-100">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Organization Validated SSL -->
+                    <div class="col-lg-4">
+                        <div class="ssl-plan-card h-100 featured">
+                            <div class="ssl-plan-badge">Most Popular</div>
+                            <div class="ssl-plan-header">
+                                <div class="ssl-plan-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <h3 class="ssl-plan-title">Organization Validated</h3>
+                                <p class="ssl-plan-subtitle">Business SSL Protection</p>
+                            </div>
+                            <div class="ssl-plan-price">
+                                <span class="price-currency">₦</span>
+                                <span class="price-amount">12,500</span>
+                                <span class="price-period">/year</span>
+                            </div>
+                            <div class="ssl-plan-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Organization validation</li>
+                                    <li><i class="fas fa-check"></i> 256-bit encryption</li>
+                                    <li><i class="fas fa-check"></i> 99.9% browser compatibility</li>
+                                    <li><i class="fas fa-check"></i> Company name in certificate</li>
+                                    <li><i class="fas fa-check"></i> $100,000 warranty</li>
+                                    <li><i class="fas fa-check"></i> Premium site seal</li>
+                                    <li><i class="fas fa-check"></i> Priority support</li>
+                                </ul>
+                            </div>
+                            <div class="ssl-plan-action">
+                                <a href="/purchase-ssl?type=ov" class="btn btn-primary btn-lg w-100">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Extended Validation SSL -->
+                    <div class="col-lg-4">
+                        <div class="ssl-plan-card h-100">
+                            <div class="ssl-plan-header">
+                                <div class="ssl-plan-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h3 class="ssl-plan-title">Extended Validation</h3>
+                                <p class="ssl-plan-subtitle">Maximum Trust & Security</p>
+                            </div>
+                            <div class="ssl-plan-price">
+                                <span class="price-currency">₦</span>
+                                <span class="price-amount">25,000</span>
+                                <span class="price-period">/year</span>
+                            </div>
+                            <div class="ssl-plan-features">
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Extended validation</li>
+                                    <li><i class="fas fa-check"></i> 256-bit encryption</li>
+                                    <li><i class="fas fa-check"></i> Green address bar</li>
+                                    <li><i class="fas fa-check"></i> Company name displayed</li>
+                                    <li><i class="fas fa-check"></i> $1,000,000 warranty</li>
+                                    <li><i class="fas fa-check"></i> Premium site seal</li>
+                                    <li><i class="fas fa-check"></i> Dedicated support</li>
+                                    <li><i class="fas fa-check"></i> Malware scanning</li>
+                                </ul>
+                            </div>
+                            <div class="ssl-plan-action">
+                                <a href="/purchase-ssl?type=ev" class="btn btn-outline-primary btn-lg w-100">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Features Section -->
+        <section id="security-features" class="security-section py-5 bg-light" aria-label="Security Features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Comprehensive Security Solutions</h2>
+                    <p class="lead text-muted">Protect your website with our advanced security features and monitoring tools.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Malware Protection -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="security-feature-card h-100">
+                            <div class="security-icon">
+                                <i class="fas fa-virus-slash"></i>
+                            </div>
+                            <h3 class="security-title">Malware Protection</h3>
+                            <p class="security-description">
+                                Advanced malware scanning and removal tools to keep your website clean and secure from threats.
+                            </p>
+                            <ul class="security-features">
+                                <li>Daily malware scans</li>
+                                <li>Automatic threat removal</li>
+                                <li>Real-time monitoring</li>
+                                <li>Blacklist monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- DDoS Protection -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="security-feature-card h-100">
+                            <div class="security-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <h3 class="security-title">DDoS Protection</h3>
+                            <p class="security-description">
+                                Enterprise-grade DDoS protection to ensure your website stays online during attacks.
+                            </p>
+                            <ul class="security-features">
+                                <li>Layer 3/4 protection</li>
+                                <li>Application layer filtering</li>
+                                <li>Traffic analysis</li>
+                                <li>Instant mitigation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Application Firewall -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="security-feature-card h-100">
+                            <div class="security-icon">
+                                <i class="fas fa-firewall"></i>
+                            </div>
+                            <h3 class="security-title">Web Application Firewall</h3>
+                            <p class="security-description">
+                                Advanced WAF protection against OWASP Top 10 vulnerabilities and zero-day exploits.
+                            </p>
+                            <ul class="security-features">
+                                <li>SQL injection protection</li>
+                                <li>XSS attack prevention</li>
+                                <li>Bot management</li>
+                                <li>Custom rule sets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Security Monitoring -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="security-feature-card h-100">
+                            <div class="security-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="security-title">24/7 Security Monitoring</h3>
+                            <p class="security-description">
+                                Round-the-clock security monitoring with instant alerts and rapid response capabilities.
+                            </p>
+                            <ul class="security-features">
+                                <li>Real-time threat detection</li>
+                                <li>Instant email alerts</li>
+                                <li>Security incident reports</li>
+                                <li>Expert analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Backup & Recovery -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="security-feature-card h-100">
+                            <div class="security-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3 class="security-title">Automated Backups</h3>
+                            <p class="security-description">
+                                Automated daily backups with one-click restore functionality to protect your data.
+                            </p>
+                            <ul class="security-features">
+                                <li>Daily automated backups</li>
+                                <li>30-day retention</li>
+                                <li>One-click restore</li>
+                                <li>Offsite storage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Vulnerability Scanning -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="security-feature-card h-100">
+                            <div class="security-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="security-title">Vulnerability Scanning</h3>
+                            <p class="security-description">
+                                Comprehensive vulnerability assessments to identify and fix security weaknesses.
+                            </p>
+                            <ul class="security-features">
+                                <li>Weekly vulnerability scans</li>
+                                <li>Detailed security reports</li>
+                                <li>Remediation guidance</li>
+                                <li>Compliance checking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Security CTA -->
+                <div class="text-center mt-5">
+                    <div class="security-cta">
+                        <h3 class="mb-3">Ready to Secure Your Website?</h3>
+                        <p class="lead mb-4">Get comprehensive security protection starting today</p>
+                        <a href="/contact-security" class="btn btn-primary btn-lg me-3">Contact Security Expert</a>
+                        <a href="#ssl-plans" class="btn btn-outline-primary btn-lg">View SSL Plans</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Figureweb</h5>
+                    <p>Professional SSL certificates and security solutions for businesses of all sizes.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                         <li><a href="emailhosting.html#business-email" class="text-light">Business Email</a></li>
+                        <li><a href="emailhosting.html#enterprise-email" class="text-light">Enterprise Email</a></li>
+                        <li><a href="emailhosting.html#google-workspace" class="text-light">Google Workspace</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-light">Help Center</a></li>
+                        <li><a href="contact.html" class="text-light">Contact Us</a></li>
+                        <li><a href="/status" class="text-light">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/about" class="text-light">About Us</a></li>
+                        <li><a href="/careers" class="text-light">Careers</a></li>
+                        <li><a href="/blog" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy" class="text-light">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-light">Terms of Service</a></li>
+                        <li><a href="/sla" class="text-light">SLA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Figureweb. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CtXxk4UVS/" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/figurewebng?s=21" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/figuraid-ltdh/" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/figurewebng?igsh=MWFxdzY3NzJrNHJmOQ==" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

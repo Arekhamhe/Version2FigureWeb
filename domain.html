@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domain Services - Register, Transfer, and Manage Your Domains with Figureweb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/domain.css" as="style">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/domain.css" rel="stylesheet">
+    
+    <title>Domain Services - Figureweb</title>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Sticky Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="h4 mb-0">Figureweb</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="domain.html" data-bs-toggle="dropdown">Domains</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="domain.html#domain-search">Domain Search</a></li>
+                            <li><a class="dropdown-item" href="domain.html#domain-transfer">Domain Transfer</a></li>
+                            <li><a class="dropdown-item" href="domain.html#bulk-registration">Bulk Registration</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Websites</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/website-builder">Website Builder</a></li>
+                            <li><a class="dropdown-item" href="/templates">Templates</a></li>
+                            <li><a class="dropdown-item" href="/ecommerce">E-commerce</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Web Hosting</a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="hosting-options">
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-user hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Linux Shared Hosting</h4>
+                                                    <p>Powerful shared hosting</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html#windows-shared" class="hosting-item">
+                                                <i class="fab fa-windows hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Window Shared Hosting</h4>
+                                                    <p>The Perfect Windows Hosting Solution</p>
+                                                </div>
+                                            </a>
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-chart-pie hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Reseller Hosting</h4>
+                                                    <p>Build your own hosting company</p>
+                                                </div>
+                                            </a>
+                                            <a href="/vps-hosting" class="hosting-item">
+                                                <i class="fas fa-server hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>VPS Hosting</h4>
+                                                    <p>Full root access allows total control</p>
+                                                </div>
+                                            </a>
+                                              
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-cloud hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Cloud Hosting</h4>
+                                                    <p>Best Cloud Hosting</p>
+                                                </div>
+                                            </a>
+
+                                            <a href="webhosting.html" class="hosting-item">
+                                                <i class="fas fa-database hosting-icon"></i>
+                                                <div class="hosting-content">
+                                                    <h4>Dedicated Server</h4>
+                                                    <p>Powerful Dedicated Servers</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="promo-section">
+                                            <h3>Secure your Website with SSL</h3>
+                                            <div class="promo-price">₦3,500<span>/year</span></div>
+                                            <div class="original-price">₦9,000/year</div>
+                                            <div class="discount-badge">60% OFF</div>
+                                            <a href="/purchase" class="purchase-btn">PURCHASE NOW!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="emailhosting.html" data-bs-toggle="dropdown">Email Hosting</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="emailhosting.html">Business Email</a></li>
+                            <li><a class="dropdown-item" href="emailhosting.html#enterprise-email">Enterprise Email</a></li>
+                            <li><a class="dropdown-item" href="emailhosting.html#google-wrkspace">Google Workspace</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ssl.html">SSL & Security</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html" >Support</a>
+                            </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="/security">Security</a></li> -->
+                    <li class="nav-item btn-group">
+                        <a class="btn btn-outline-primary me-2" href="/login">Login</a>
+                        <a class="btn btn-primary" href="/signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <i class="fas fa-globe"></i>
+                                <span>Domain Services</span>
+                            </div>
+                            <h1 class="hero-title">
+                                Find Your Perfect
+                                <span class="gradient-text">Domain Name</span>
+                            </h1>
+                            <p class="hero-description">
+                                Secure your online presence with our comprehensive domain services. 
+                                Register, transfer, or manage domains with ease and confidence.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#domain-search" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-search"></i>
+                                    Search Domains
+                                </a>
+                                <a href="#domain-transfer" class="btn btn-outline-light btn-lg">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Transfer Domain
+                                </a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-label">TLDs Available</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Support</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-illustration">
+                            <div class="floating-elements">
+                                <div class="floating-domain">.com</div>
+                                <div class="floating-domain">.net</div>
+                                <div class="floating-domain">.org</div>
+                                <div class="floating-domain">.io</div>
+                            </div>
+                            <div class="main-illustration">
+                                <div class="globe-container">
+                                    <div class="globe">
+                                        <div class="globe-lines"></div>
+                                        <div class="globe-dots"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Search Section -->
+        <section id="domain-search" class="domain-search-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5">
+                        <h2 class="section-title">Search Your Perfect Domain</h2>
+                        <p class="section-description">
+                            Find the ideal domain name for your business or project. 
+                            Check availability across hundreds of extensions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="search-container">
+                            <form class="domain-search-form">
+                                <div class="search-input-group">
+                                    <div class="search-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <input type="text" class="form-control search-input" placeholder="Enter your domain name..." id="domainSearchInput">
+                                    <button type="submit" class="btn btn-primary search-btn">
+                                        <span class="btn-text">Search</span>
+                                        <span class="btn-loading d-none">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <div class="popular-extensions">
+                                <span class="extensions-label">Popular extensions:</span>
+                                <div class="extension-tags">
+                                    <span class="extension-tag">.com <small>$12.99</small></span>
+                                    <span class="extension-tag">.net <small>$14.99</small></span>
+                                    <span class="extension-tag">.org <small>$13.99</small></span>
+                                    <span class="extension-tag">.io <small>$49.99</small></span>
+                                    <span class="extension-tag">.co <small>$29.99</small></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="search-results d-none" id="searchResults">
+                            <div class="results-header">
+                                <h4>Search Results</h4>
+                            </div>
+                            <div class="results-grid">
+                                <!-- Results will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Transfer Section -->
+        <section id="domain-transfer" class="domain-transfer-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="transfer-content">
+                            <div class="section-badge">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>Domain Transfer</span>
+                            </div>
+                            <h2 class="section-title">Transfer Your Domain Easily</h2>
+                            <p class="section-description">
+                                Move your domain to Figureweb and enjoy better management tools, 
+                                competitive pricing, and exceptional support.
+                            </p>
+                            
+                            <div class="transfer-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h5>Secure Transfer</h5>
+                                        <p>Protected transfer process with domain lock</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h5>Quick Process</h5>
+                                        <p>Most transfers complete within 5-7 days</p>
+                                    </div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h5>Free Extension</h5>
+                                        <p>Get 1 year extension with every transfer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="transfer-form-container">
+                            <div class="transfer-form">
+                                <h4>Start Your Transfer</h4>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="transferDomain" class="form-label">Domain to Transfer</label>
+                                        <input type="text" class="form-control" id="transferDomain" placeholder="example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="authCode" class="form-label">Authorization Code (EPP Code)</label>
+                                        <input type="text" class="form-control" id="authCode" placeholder="Enter your auth code">
+                                        <div class="form-text">Get this from your current registrar</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="transferTerms">
+                                            <label class="form-check-label" for="transferTerms">
+                                                I agree to the <a href="#">transfer terms</a> and conditions
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        Start Transfer - $9.99
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bulk Registration Section -->
+        <section id="bulk-registration" class="bulk-registration-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5">
+                        <div class="section-badge">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Bulk Registration</span>
+                        </div>
+                        <h2 class="section-title">Register Multiple Domains</h2>
+                        <p class="section-description">
+                            Save time and money by registering multiple domains at once. 
+                            Perfect for businesses and domain investors.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="bulk-form-container">
+                            <div class="bulk-form">
+                                <div class="form-header">
+                                    <h4>Bulk Domain Registration</h4>
+                                    <p>Enter up to 100 domains, one per line</p>
+                                </div>
+                                
+                                <form>
+                                    <div class="mb-4">
+                                        <label for="bulkDomains" class="form-label">Domain List</label>
+                                        <textarea class="form-control bulk-textarea" id="bulkDomains" rows="8" placeholder="example1.com&#10;example2.net&#10;example3.org&#10;..."></textarea>
+                                        <div class="form-text">
+                                            <span class="domain-count">0 domains</span> • 
+                                            <a href="#" class="upload-link">Upload from file</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <label for="bulkExtension" class="form-label">Default Extension</label>
+                                            <select class="form-select" id="bulkExtension">
+                                                <option value=".com">.com - $12.99/year</option>
+                                                <option value=".net">.net - $14.99/year</option>
+                                                <option value=".org">.org - $13.99/year</option>
+                                                <option value=".io">.io - $49.99/year</option>
+                                                <option value=".co">.co - $29.99/year</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="bulkYears" class="form-label">Registration Period</label>
+                                            <select class="form-select" id="bulkYears">
+                                                <option value="1">1 Year</option>
+                                                <option value="2">2 Years</option>
+                                                <option value="3">3 Years</option>
+                                                <option value="5">5 Years</option>
+                                                <option value="10">10 Years</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bulk-summary">
+                                        <div class="summary-item">
+                                            <span class="summary-label">Total Domains:</span>
+                                            <span class="summary-value" id="totalDomains">0</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="summary-label">Estimated Cost:</span>
+                                            <span class="summary-value" id="estimatedCost">$0.00</span>
+                                        </div>
+                                        <div class="summary-item discount">
+                                            <span class="summary-label">Bulk Discount (10%):</span>
+                                            <span class="summary-value" id="bulkDiscount">-$0.00</span>
+                                        </div>
+                                        <div class="summary-item total">
+                                            <span class="summary-label">Final Total:</span>
+                                            <span class="summary-value" id="finalTotal">$0.00</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-layer-group"></i>
+                                        Check Availability & Proceed
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="bulk-features">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-percentage"></i>
+                                        </div>
+                                        <h5>Volume Discounts</h5>
+                                        <p>Save up to 15% on bulk registrations of 50+ domains</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <h5>Bulk Management</h5>
+                                        <p>Manage all your domains from a single dashboard</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-headset"></i>
+                                        </div>
+                                        <h5>Priority Support</h5>
+                                        <p>Get dedicated support for your bulk registrations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Enhanced Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Figureweb</h5>
+                    <p>Professional email hosting solutions for businesses of all sizes.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="emailhosting.html#business-email" class="text-light">Business Email</a></li>
+                        <li><a href="emailhosting.html#enterprise-email" class="text-light">Enterprise Email</a></li>
+                        <li><a href="emailhosting.html#google-workspace" class="text-light">Google Workspace</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-light">Help Center</a></li>
+                        <li><a href="contact.html" class="text-light">Contact Us</a></li>
+                        <li><a href="/status" class="text-light">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="aboutUs.html" class="text-light">About Us</a></li>
+                        <li><a href="/careers" class="text-light">Careers</a></li>
+                        <li><a href="/blog" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy" class="text-light">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-light">Terms of Service</a></li>
+                        <li><a href="/sla" class="text-light">SLA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Figureweb. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CtXxk4UVS/" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/figurewebng?s=21" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/figuraid-ltdh/" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/figurewebng?igsh=MWFxdzY3NzJrNHJmOQ==" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/domain.js"></script>
+</body>
+</html>
